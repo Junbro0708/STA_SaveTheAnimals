@@ -1,0 +1,131 @@
+/* NAVIGATION */
+nav ul li:nth-child(3){
+  text-decoration: underline;
+}
+/* HEADER */
+header{
+  background-color: #293462;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 40vh;
+}
+header > section{
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 2;
+}
+header > h1{
+  position: absolute;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  z-index: 2;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  font-size: 55px;
+  letter-spacing: 1.5px;
+}
+/* MAIN */
+main{
+  background-color: gainsboro;
+  padding: 5% 10%;
+}
+caption{
+  text-transform: capitalize;
+  font-size: 30px;
+  padding-bottom: 3%;
+  font-weight: 600;
+}
+table{
+  border-collapse: collapse;
+}
+table, td{
+  color: #333;
+  border-bottom: 1px solid #333;
+}
+th{
+  border-top: 3px solid #333;
+  border-bottom: 3px solid #333;
+}
+tfoot{
+  border-top: 3px solid #333;
+  border-bottom: 3px solid #333;
+}
+tbody tr{
+  cursor: pointer;
+}
+tbody tr:hover td{
+  background-color: #aaa;
+  color: white;
+}
+table{
+  width: 100%;
+}
+table thead{
+  font-weight: 600;
+}
+table thead th{
+  text-align: left;
+  padding: 1%;
+}
+table tbody td{
+  padding: 1%;
+}
+tr td:first-child,
+tr td:last-child{
+  text-align: center;
+}
+tfoot .page{
+  padding: 1%;
+  padding-right: 2%;
+  padding-left: 2%;
+}
+tfoot ul{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+tfoot ul li{
+  list-style: none;
+}
+tfoot .form{
+  padding-left: 5%;
+}
+tfoot input[type="text"]{
+  width: 80%;
+  padding: 0.7%;
+  border: none;
+  border-radius: 0;
+  margin-right: 1.5%;
+  border: 1px solid gainsboro;
+}
+tfoot input[type="submit"]{
+  width: 16%;
+  padding: 0.7%;
+  border: none;
+  border-radius: 0;
+  color: whitesmoke;
+  background-color: #293462;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+tfoot input[type="text"]:focus{
+  outline: none !important;
+  border: 1px solid #293462;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+tfoot input[type="submit"]:hover{
+  background-color: #536ac4;
+}
+tfoot ul a{
+  color: #293462;
+  text-decoration: none;
+  font-style: italic;
+}
+tfoot ul a:hover{
+  text-decoration: underline;
+  color: #5d76d6;
+}

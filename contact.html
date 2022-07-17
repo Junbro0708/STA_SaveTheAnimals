@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STA - Save The Animals</title>
+  <!-- FAVICON -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="shortcut icon" href="./image/animal-therapy.png">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/contact.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Home Page</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./table.html">Table Content</a></li>
+        <li><a href="./contact.html" target="_blank">Contact Form</a></li>
+      </ul>
+    </nav>
+    <section>
+      <article>
+        <h1>STA</h1>
+        <p>Save The Animals</p>
+      </article>
+    </section>
+    <h1>Contact Us</h1>
+    <p>If you want to cooperate, contact us</p>
+  </header>
+  <main>
+    <article>
+      <form name="contact" action="./index.html" method="get">
+        <h2>Contact To Save The Animals Form</h2>
+        <label for="contact-type">Contact Type</label>
+        <select name="contact-type" id="contact-type">
+            <option disabled selected>Choose a contact type</option>
+            <option>Donation</option>
+            <option>Rescue</option>
+            <option>Coordination</option>
+            <option>Events</option>
+            <option>Others</option>
+        </select>
+        <label for="country">Choose a Country</label>
+        <select name="country" id="country">
+          <option disabled selected>Choose your country</option>
+          <optgroup label="Asia">
+            <option>South Korea</option>
+            <option>Japan</option>
+            <option>China</option>
+            <option>Taiwan</option>
+            <option>Thailand</option>
+          </optgroup>
+          <optgroup label="America">
+            <option>United States</option>
+            <option>Canada</option>
+            <option>Brazile</option>
+            <option>Mexico</option>
+          </optgroup>
+          <optgroup label="Europe">
+            <option>British</option>
+            <option>France</option>
+            <option>Germany</option>
+            <option>Spain</option>
+          </optgroup>
+        </select>
+        <label for="name">Name</label>
+        <section class="name-input">
+          <input type="text" name="name" placeholder="First name (Required)" required>
+          <input type="text" name="name" placeholder="Last name">
+        </section>
+        <label for="email">Email Address</label>
+        <input type="email" name="email" id="email" placeholder="Email Address (Required)" required>
+        <label for="contact-number">Contact Number</label>
+        <section>
+          <select name="contact-number" id="contact-number">
+          <option disabled selected>Choose your country code</option>
+          <optgroup label="Asia">
+            <option>+82</option>
+            <option>+81</option>
+            <option>+86</option>
+            <option>+886</option>
+            <option>+66</option>
+          </optgroup>
+          <optgroup label="America">
+            <option>+1</option>
+            <option>+55</option>
+            <option>+52</option>
+          </optgroup>
+          <optgroup label="Europe">
+            <option>+44</option>
+            <option>+33</option>
+            <option>+49</option>
+            <option>+34</option>
+          </optgroup>
+        </select>
+        <input type="tel" name="contact-number" placeholder="Contact Number (Required)" id="tel" required>
+        </section>
+        <label for="textarea">Content</label>
+        <textarea name="textarea" id="textarea" placeholder="Enter the contents...(Required)" required></textarea>
+        <label for="date">Current Date (Your Country)</label>
+        <input type="text" name="date" id="date" placeholder="MM/DD/YYYY" onfocus="(this.type='date')">
+        <label for="time">Current Time (Your Country)</label>
+        <input type="time" name="time" id="time" min="00:00" max="24:00">
+        <section class="radio">
+          <p>Please select your age : </p>
+          <input type="radio" id="child" name="age" value="0-18">
+          <label for="child">0-18</label>
+          <input type="radio" id="young-adults" name="age" value="19-39">
+          <label for="young-adults">19-39</label>
+          <input type="radio" id="old-adults" name="age" value="over 40">
+          <label for="old-adults">over 40</label>
+          <input type="radio" id="no-reveal" name="age" value="x">
+          <label for="no-reveal">Prefer not to say</label>
+        </section>
+        <section class="agree">
+          <label for="agreement">Do you agree that the completed form will be delivered to the STA? (Required)</label>
+          <input type="checkbox" name="agreement" id="agreement" required>
+        </section>
+        <section class="btn">
+          <input type="reset" value="Reset">
+          <input type="submit" value="Send">
+        </section>
+      </form>
+    </article>
+  </main>
+  <footer>
+    <article>
+      <aside></aside>
+      <aside></aside>
+      <aside></aside>
+      <aside></aside>
+      <aside></aside>
+    </article>
+    <p>This Website is made for Jun's portfolio.</p>
+    <p>&copy; 2022 Save The Animals / All rights reserved.</p>
+  </footer>
+</body>
+</html>
